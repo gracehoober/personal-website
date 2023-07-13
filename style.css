@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #D98E73;
+  border: red 1px solid;
+  display: flex;
+  flex-grow: ;
+
+}
+.logo {
+  height: 30px;
+  width: auto;
+}
