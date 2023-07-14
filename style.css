@@ -3,7 +3,7 @@
   src: url(fonts/Spekk\ Variable/PFSpekkVAR-Regular-subset.otf);
 }
 @font-face {
-  font-family: PFSPekk-BOLD;
+  font-family: PFSpekk-BOLD;
   src: url(fonts/Spekk\ Variable/PFSpekkVAR-SemiBold-subset.otf);
 }
 @font-face {
@@ -23,24 +23,51 @@
   font-family: Roboto-Bold;
   src: url(fonts/Roboto/Roboto-Bold.ttf);
 }
-
-body {
+html{
+  height: 100%;
+  width: auto;
   display: flex;
+}
+body {
+  height: 100vw;
+  width: auto;
+  display: inherit;
   flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
   font-family: PFSpekk-Regular, Roboto-Regular,'Trebuchet MS', Arial, sans-serif;
+  color:#0D0604;
+
 }
 
 nav {
   background-color: #F2955E;
+  display: inherit;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 69px;
+
+}
+.nav-links {
+  display: flex;
+}
+.navlink1:hover, .navlink2:hover, .navlink3:hover {
+  font-family: PFSpekk-BOLD;
+}
+.navlink1, .navlink2, .navlink3 {
+  color: #0D0604;
+  text-decoration: none;
+  display: inherit;
+  flex-direction: inherit;
+  margin: 1em;
+
 }
 
-nav>a {
-  color: white;
-  text-decoration: none;
-}
 
 article {
   background-color: #F2B6BB;
+  height: 50%;
 }
 
 h1 {
@@ -52,7 +79,10 @@ h1 {
  }
 
 footer {
+  height: 66px;
+  display: inherit;
   background-color: #0D0604;
+
 }
 .connect{
   color: white;
