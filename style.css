@@ -1,27 +1,61 @@
+@font-face {
+  font-family: PFSpekk-Regular;
+  src: url(fonts/Spekk\ Variable/PFSpekkVAR-Regular-subset.otf);
+}
+@font-face {
+  font-family: PFSPekk-BOLD;
+  src: url(fonts/Spekk\ Variable/PFSpekkVAR-SemiBold-subset.otf);
+}
+@font-face {
+  font-family: PFSpekk-Black;
+  src: url(fonts/Spekk\ Variable/PFSpekkVAR-Black-subset.otf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Black;
+  src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(fonts/Roboto/Roboto-Bold.ttf);
+}
+
 body {
   display: flex;
   flex-direction: column;
+  font-family: PFSpekk-Regular, Roboto-Regular,'Trebuchet MS', Arial, sans-serif;
 }
+
 nav {
   background-color: #F2955E;
 }
+
 nav>a {
   color: white;
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 article {
   background-color: #F2B6BB;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-`
+
+h1 {
+  font-family: PFSpekk-Black, Roboto-Black,'Trebuchet MS', Arial, sans-serif;
+
+}
+ h2 {
+  font-family: PFSpekk-BOLD, Roboto-Bold,'Trebuchet MS', Arial, sans-serif;
+ }
 
 footer {
   background-color: #0D0604;
 }
 .connect{
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .logo {
   height: 30px;
