@@ -1,18 +1,37 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+nav {
+  background-color: #F2955E;
+}
+nav>a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+article {
+  background-color: #F2B6BB;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+`
 
 footer {
-  background-color: #D98E73;
-  border: red 1px solid;
-  display: flex;
-  flex-grow: ;
-
+  background-color: #0D0604;
+}
+.connect{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .logo {
   height: 30px;
   width: auto;
+}
+color {
+  background-color: #F2B6BB;
+  background-color: #F2955E;
+  background-color: #0D0604;
+  background-color: #D98E73;
+  background-color: #8C3D2B;
+
 }
