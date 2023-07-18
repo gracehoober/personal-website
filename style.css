@@ -23,34 +23,40 @@
   font-family: Roboto-Bold;
   src: url(fonts/Roboto/Roboto-Bold.ttf);
 }
-html{
-  height: 100%;
-  width: auto;
-  display: flex;
-}
-body {
-  height: 100vw;
-  width: auto;
-  display: inherit;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: stretch;
+
+/* this can be use to reset everything wherease normalize.css retains default
+styles that are useful and removes those that are not useful
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+html {
   font-family: PFSpekk-Regular, Roboto-Regular,'Trebuchet MS', Arial, sans-serif;
   color:#0D0604;
-
 }
 
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+nav, footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20%;
+}
 nav {
   background-color: #F2955E;
   display: inherit;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 69px;
-
 }
 .nav-links {
-  display: flex;
+  display: inherit;
 }
 .navlink1:hover, .navlink2:hover, .navlink3:hover {
   font-family: PFSpekk-BOLD;
@@ -64,33 +70,49 @@ nav {
 
 }
 
+footer {
+  display: inherit;
+  justify-content: space-around;
+  background-color: #0D0604;
+  line-height: 60px;
+  font-size: 25px;
+
+}
+.connect, .connect-links{
+  display:inherit;
+  color: white;
+}
+.logo1, .logo2 {
+  align-items: center;
+  height: 30px;
+  width: auto;
+
+}
 
 article {
+  display: inherit;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: #F2B6BB;
-  height: 50%;
+  flex-grow:2;
 }
-
-h1 {
+.personal-statement {
+  margin:30px;
+}
+header > h1 {
   font-family: PFSpekk-Black, Roboto-Black,'Trebuchet MS', Arial, sans-serif;
-
 }
- h2 {
+.personal-statement > h2 {
   font-family: PFSpekk-BOLD, Roboto-Bold,'Trebuchet MS', Arial, sans-serif;
  }
 
-footer {
-  height: 66px;
-  display: inherit;
-  background-color: #0D0604;
-
-}
-.connect{
-  color: white;
-}
-.logo {
-  height: 30px;
+.home-photo {
+  height: 300px;
   width: auto;
+  margin: 30px;
 }
+
 color {
   background-color: #F2B6BB;
   background-color: #F2955E;
