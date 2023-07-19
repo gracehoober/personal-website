@@ -33,6 +33,7 @@ styles that are useful and removes those that are not useful
 }*/
 
 html {
+  font-size: 16px;
   font-family: PFSpekk-Regular, Roboto-Regular,'Trebuchet MS', Arial, sans-serif;
   color:#0D0604;
 }
@@ -42,32 +43,34 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 nav, footer {
-  flex-grow: 0;
+  flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 20%;
+  flex-basis: 10%;
+  max-height: 5em;
 }
 nav {
-  background-color: #F2955E;
+  background-color:  #F2955E;
   display: inherit;
   justify-content: space-around;
   align-items: center;
 }
-.nav-links {
+.nav-right {
   display: inherit;
+  align-items: center;
+  justify-content: space-around;
 }
-.navlink1:hover, .navlink2:hover, .navlink3:hover {
+.navlink1>h2:hover{
+  font-family: PFSpekk-Black;
+}
+.navlink2:hover, .navlink3:hover, .navlink4:hover {
   font-family: PFSpekk-BOLD;
 }
-.navlink1, .navlink2, .navlink3 {
+.navlink1, .navlink2, .navlink3, .navlink4, .resume-link {
   color: #0D0604;
   text-decoration: none;
-  display: inherit;
-  flex-direction: inherit;
-  margin: 1em;
-
+  margin: 1.5em;
 }
 
 footer {
@@ -76,11 +79,10 @@ footer {
   background-color: #0D0604;
   line-height: 60px;
   font-size: 25px;
-
 }
 .connect, .connect-links{
   display:inherit;
-  color: white;
+  color: #EAEAEA;
 }
 .logo1, .logo2 {
   align-items: center;
@@ -94,6 +96,7 @@ article {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  /*background-color: #E79E9E ;*/
   background-color: #F2B6BB;
   flex-grow:2;
 }
@@ -103,10 +106,13 @@ article {
 header > h1 {
   font-family: PFSpekk-Black, Roboto-Black,'Trebuchet MS', Arial, sans-serif;
 }
-.personal-statement > h2 {
+h2 {
   font-family: PFSpekk-BOLD, Roboto-Bold,'Trebuchet MS', Arial, sans-serif;
  }
-
+.photo {
+  background-color: #D98E73;
+  margin: 30px;
+}
 .home-photo {
   height: 300px;
   width: auto;
@@ -119,5 +125,8 @@ color {
   background-color: #0D0604;
   background-color: #D98E73;
   background-color: #8C3D2B;
-
+  background-color: #EAEAEA;
+  background-color: #6BBFBF;
+  background-color: #D0B6F2;
+  background-color: #FEC8B6;
 }
