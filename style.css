@@ -44,13 +44,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-nav, footer {
+.primary-nav, footer {
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 10%;
-  max-height: 5em;
+  flex-basis: 15%;
+  max-height: 115px;
 }
-nav {
+.primary-nav {
   background-color:  #F2955E;
   display: inherit;
   justify-content: space-around;
@@ -74,21 +74,45 @@ nav {
 }
 
 footer {
-  display: inherit;
-  justify-content: space-around;
   background-color: #0D0604;
-  line-height: 60px;
-  font-size: 25px;
-}
-.connect, .connect-links{
-  display:inherit;
   color: #EAEAEA;
+  display: inherit;
 }
-.logo1, .logo2 {
+.connect{
+  display: inherit;
+  flex-direction: row;
   align-items: center;
+  margin-left: 15%;
+
+
+}
+.expand{
+  font-size: 25px;
+  position: absolute;
+
+  display: inherit;
+  align-items: center;
+}
+/* .expand:hover{
+  font-family: PFSpekk-Bold;
+} */
+.expand > li {
+  list-style: none;
+  position: relative;
+  left: 20px;
+  display: none; /* makes list items disappear*/
+}
+.expand:hover li {
+  display:flex; /* in video said to set to block*/
+  align-items: center;
+  list-style: none;
+
+}
+
+.logo1, .logo2 {
   height: 30px;
   width: auto;
-
+  padding:10px;
 }
 
 article {
@@ -96,7 +120,6 @@ article {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /*background-color: #E79E9E ;*/
   background-color: #F2B6BB;
   flex-grow:2;
 }
