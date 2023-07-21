@@ -33,11 +33,10 @@ styles that are useful and removes those that are not useful
 }*/
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   font-family: PFSpekk-Regular, Roboto-Regular,'Trebuchet MS', Arial, sans-serif;
   color:#0D0604;
 }
-/* ::-webkit-scrollbar { display: none; } */
 
 body {
   width: 100%;
@@ -47,9 +46,9 @@ body {
   margin: 0; /**/
 }
 .primary-nav, footer {
+  display: flex;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 15%;
   max-height: 115px;
 
 }
@@ -58,6 +57,7 @@ body {
   display: inherit;
   justify-content: space-around;
   align-items: center;
+  font-size: 20px;
 }
 .nav-right {
   display: inherit;
@@ -79,10 +79,8 @@ body {
 footer {
   background-color: #0D0604;
   color: #EAEAEA;
-  display: flex;
-  position:relative;
-  height: 115px; /**/
-  overflow: auto; /**/
+  height: 115px;
+
 }
 .connect{
   display: inherit;
@@ -123,7 +121,7 @@ body > div {
   align-items: center;
   background-color: #F2B6BB;
   flex-grow:2; /*makes the body fill the viewwindow across all pages but here are inconistencies depending on the content of the pages*/
-  overflow: auto;
+  overflow: auto; /* question on this */
 }
 .personal-statement {
   margin:30px;
@@ -153,31 +151,27 @@ h2 {
   display: flex;
 }
 .contact-content{
-  position: absolute;
+
   border: black 1px solid;
 }
-.text{
-  font-size: 20px;
+.contact-content > .text{
+  font-size: 30px;
 
 }
 .arrow {
   background-color: #F2B6BB;
-  max-height:400px;
-  z-index: 0;
+
   margin:10%;
-  width: auto;
+
   border: red solid 1px;
   transform:scaleX(-1);
-  position: absolute;/**/
-  bottom:20%;/**/
-  left:10px;/**/
-  transform: translateY(60%); /**/
+
 }
 .fjord{
   height:400px;
   width: auto;
   margin:30px;
-  display: block;
+
 }
 
 .about-content{
@@ -189,7 +183,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5%;
+  margin: 5% 5% 0%;
 }
 .about-text{
  margin: 20px;
@@ -197,21 +191,23 @@ h2 {
 .resume-img {
   height: 800px;
   width:auto;
+}
+.resume-link {
+  margin: 5px;
+  display:block;
 
+}
+.sample{
+  border: pink 1px solid;
+}
+.resume-link > a  {
+  font-size: 20px;
+  text-decoration: none;
+  color:#0D0604
 }
 img.about  {
   height:250px;
   width:auto;
+
 }
 
-color {
-  background-color: #F2B6BB;
-  background-color: #F2955E;
-  background-color: #0D0604;
-  background-color: #D98E73;
-  background-color: #8C3D2B;
-  background-color: #EAEAEA;
-  background-color: #6BBFBF;
-  background-color: #D0B6F2;
-  background-color: #FEC8B6;
-}
