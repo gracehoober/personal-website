@@ -51,7 +51,7 @@ body {
   flex-shrink: 0;
   flex-basis: 15%;
   max-height: 115px;
-  min-height: 8vh; /**/
+
 }
 .primary-nav {
   background-color:  #F2955E;
@@ -79,7 +79,7 @@ body {
 footer {
   background-color: #0D0604;
   color: #EAEAEA;
-  display: inherit;
+  display: flex;
   position:relative;
   height: 115px; /**/
   overflow: auto; /**/
@@ -89,11 +89,11 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-left: 15%;
+  /* position: relative; align arrow?? */
 }
 .expand{
   font-size: 25px;
   position: absolute;
-
   display: inherit;
   align-items: center;
 }
@@ -105,7 +105,7 @@ footer {
   display: none; /* makes list items disappear*/
 }
 .expand:hover li {
-  display:flex; 
+  display:flex;
   align-items: center;
   list-style: none;
 }
@@ -147,29 +147,39 @@ h2 {
   color:#0D0604;
   text-decoration: none;
 }
-.contact-article {
-  display: inherit;
-  flex-direction: row;
-  align-items:center;
-  flex-grow:1;
-  flex-shrink: 2;
-}
 
+/* contact page styling*/
+.contact-article {
+  display: flex;
+}
+.contact-content{
+  position: absolute;
+  border: black 1px solid;
+}
+.text{
+  font-size: 20px;
+
+}
 .arrow {
   background-color: #F2B6BB;
   max-height:400px;
-  flex-basis: 200px;
+  z-index: 0;
   margin:10%;
   width: auto;
-  margin-left: 10%;
-  transform:scaleX(-1)
+  border: red solid 1px;
+  transform:scaleX(-1);
+  position: absolute;/**/
+  bottom:20%;/**/
+  left:10px;/**/
+  transform: translateY(60%); /**/
+
 }
+
 .fjord{
   height:400px;
   width: auto;
   margin:30px;
-  flex-grow: 0;
-  flex-shrink:1;
+  display: block;
 }
 
 
