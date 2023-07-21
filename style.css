@@ -37,18 +37,21 @@ html {
   font-family: PFSpekk-Regular, Roboto-Regular,'Trebuchet MS', Arial, sans-serif;
   color:#0D0604;
 }
+/* ::-webkit-scrollbar { display: none; } */
 
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* 100%?*/
   display: flex;
   flex-direction: column;
+  margin: 0; /**/
 }
 .primary-nav, footer {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 15%;
   max-height: 115px;
+  min-height: 8vh; /**/
 }
 .primary-nav {
   background-color:  #F2955E;
@@ -77,14 +80,15 @@ footer {
   background-color: #0D0604;
   color: #EAEAEA;
   display: inherit;
+  position:relative;
+  height: 115px; /**/
+  overflow: auto; /**/
 }
 .connect{
   display: inherit;
   flex-direction: row;
   align-items: center;
   margin-left: 15%;
-
-
 }
 .expand{
   font-size: 25px;
@@ -93,9 +97,7 @@ footer {
   display: inherit;
   align-items: center;
 }
-/* .expand:hover{
-  font-family: PFSpekk-Bold;
-} */
+
 .expand > li {
   list-style: none;
   position: relative;
@@ -103,10 +105,9 @@ footer {
   display: none; /* makes list items disappear*/
 }
 .expand:hover li {
-  display:flex; /* in video said to set to block*/
+  display:flex; 
   align-items: center;
   list-style: none;
-
 }
 
 .logo1, .logo2 {
@@ -115,13 +116,14 @@ footer {
   padding:10px;
 }
 
-article {
-  display: inherit;
+body > div {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #F2B6BB;
-  flex-grow:2;
+  flex-grow:2; /*makes the body fill the viewwindow across all pages but here are inconistencies depending on the content of the pages*/
+  overflow: auto;
 }
 .personal-statement {
   margin:30px;
@@ -141,6 +143,35 @@ h2 {
   width: auto;
   margin: 30px;
 }
+.remove-link-style {
+  color:#0D0604;
+  text-decoration: none;
+}
+.contact-article {
+  display: inherit;
+  flex-direction: row;
+  align-items:center;
+  flex-grow:1;
+  flex-shrink: 2;
+}
+
+.arrow {
+  background-color: #F2B6BB;
+  max-height:400px;
+  flex-basis: 200px;
+  margin:10%;
+  width: auto;
+  margin-left: 10%;
+  transform:scaleX(-1)
+}
+.fjord{
+  height:400px;
+  width: auto;
+  margin:30px;
+  flex-grow: 0;
+  flex-shrink:1;
+}
+
 
 color {
   background-color: #F2B6BB;
