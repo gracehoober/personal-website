@@ -134,11 +134,11 @@ header > h1 {
 h2 {
   font-family: PFSpekk-BOLD, Roboto-Bold,'Trebuchet MS', Arial, sans-serif;
  }
-.photo {
+.portrait-frame {
   background-color: #D98E73;
-  margin: 30px;
+  margin: 20px;
 }
-.home-photo {
+.portrait {
   height: 300px;
   width: auto;
   margin: 30px;
@@ -172,9 +172,7 @@ h2 {
   bottom:20%;/**/
   left:10px;/**/
   transform: translateY(60%); /**/
-
 }
-
 .fjord{
   height:400px;
   width: auto;
@@ -182,6 +180,29 @@ h2 {
   display: block;
 }
 
+.about-content{
+  display:flex;
+  flex-direction: column;
+}
+.abvresume {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.about-text{
+ margin: 20px;
+}
+.resume-img {
+  height: 800px;
+  width:auto;
+
+}
+img.about  {
+  height:250px;
+  width:auto;
+}
 
 color {
   background-color: #F2B6BB;
