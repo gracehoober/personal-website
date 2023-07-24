@@ -68,9 +68,11 @@ body {
 }
 .navlink1>h2:hover{
   font-family: PFSpekk-Black;
+  opacity: 0.9;
 }
 .navlink2:hover, .navlink3:hover, .navlink4:hover {
   font-family: PFSpekk-BOLD;
+  opacity: 0.9;
 }
 .navlink1, .navlink2, .navlink3, .navlink4, .resume-link {
   color: #0D0604;
@@ -95,6 +97,9 @@ footer {
   position: absolute;
   display: inherit;
   align-items: center;
+}
+.expand:hover{
+  font-family: PFSpekk-BOLD;
 }
 .expand > li {
   list-style: none;
@@ -160,13 +165,35 @@ h2 {
   font-size: 30px;
   margin: 50px;
 }
+
 .fjord{
   height:400px;
   width: auto;
-  margin:50px;
+  margin:0px 50px;
   border-radius: 1%;
+  opacity: 0.85;
 }
+.fjord:hover{
 
+}
+.background{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background:hover .Fe{
+  display:block;
+}
+.Fe{
+  font-size: 15px;
+  display: none;
+  background-color: #D98E73;
+  padding: 2.5px 5px;
+}
+.Fe a {
+  color:#0D0604;
+  text-decoration: none;
+}
 /* about page styling */
 
 .about-content{
@@ -205,6 +232,6 @@ h2 {
 img.about  {
   height:250px;
   width:auto;
-
 }
+
 
