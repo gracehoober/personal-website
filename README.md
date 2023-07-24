@@ -1,1 +1,1 @@
-# personal-website
+Building a personal website has been a challenge. The duality of designing a site and then implementing these design ideas was more labor intensive than I anticipated. But, I sincerely enjoyed the challenge! I have a list of cosmetic changes I hope to create over the next few weeks, as well as, more advanced ideas that may take me a bit longer! For now, I am content with my understanding of the basics of CSS and HTML. Check back for more additions!
