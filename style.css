@@ -43,8 +43,10 @@ body {
   min-height: 100vh; /* 100%?*/
   display: flex;
   flex-direction: column;
-  margin: 0; /**/
+  margin: 0;
 }
+
+/* nav bar and some footer */
 .primary-nav, footer {
   display: flex;
   flex-grow: 1;
@@ -76,18 +78,17 @@ body {
   margin: 1.5em;
 }
 
+/*footer*/
 footer {
   background-color: #0D0604;
   color: #EAEAEA;
   height: 115px;
-
 }
 .connect{
   display: inherit;
   flex-direction: row;
   align-items: center;
-  margin-left: 15%;
-  /* position: relative; align arrow?? */
+  margin-left: 11%;
 }
 .expand{
   font-size: 25px;
@@ -95,7 +96,6 @@ footer {
   display: inherit;
   align-items: center;
 }
-
 .expand > li {
   list-style: none;
   position: relative;
@@ -114,6 +114,7 @@ footer {
   padding:10px;
 }
 
+/* landing page and general styling */
 body > div {
   display: flex;
   flex-direction: row;
@@ -135,11 +136,13 @@ h2 {
 .portrait-frame {
   background-color: #D98E73;
   margin: 20px;
+  border-radius: 0.5%;
 }
 .portrait {
   height: 300px;
   width: auto;
   margin: 30px;
+  border-radius: 0.5%;
 }
 .remove-link-style {
   color:#0D0604;
@@ -149,30 +152,22 @@ h2 {
 /* contact page styling*/
 .contact-article {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.contact-content{
-
-  border: black 1px solid;
-}
-.contact-content > .text{
+.text{
   font-size: 30px;
-
-}
-.arrow {
-  background-color: #F2B6BB;
-
-  margin:10%;
-
-  border: red solid 1px;
-  transform:scaleX(-1);
-
+  margin: 50px;
 }
 .fjord{
   height:400px;
   width: auto;
-  margin:30px;
-
+  margin:50px;
+  border-radius: 1%;
 }
+
+/* about page styling */
 
 .about-content{
   display:flex;
@@ -198,7 +193,9 @@ h2 {
 
 }
 .sample{
-  border: pink 1px solid;
+  border: pink 2px solid;
+  margin-bottom: 20px;
+  border-radius: 1%;
 }
 .resume-link > a  {
   font-size: 20px;
